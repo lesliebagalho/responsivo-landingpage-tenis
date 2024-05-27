@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    box-sizing: border-box;
+}
+
+.header{
+    background: orange;
+    height: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+
+    .main-left{
+        padding: 20px;
+        background: #D3E5FE;
+        text-align: left;
+        height: 100vh;
+    }
+
+    .main-right{
+        padding: 20px;
+        background: #14348E;
+        text-align: right;
+    }
+}
+
+.box-flutuante{
+    background: #FACB57;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 40%;
+    left: 13%;
+    z-index: 999;
+}
+
+
+/* Galaxy Fold 280x653 */
+@media (max-width: 280px) {
+    .main-left{
+        width: 50%;
+    }
+
+    .main-right{
+        width: 50%;
+    }
+
+    h1{
+        font-size: 1rem;
+    }
+
+    .box-flutuante{
+        .img-titulo h2{
+            width: 50%;
+            font-size: 1rem;
+            text-align: left;
+            padding: 10px;
+        }
+
+        .tenis-flutuante{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+            .img-tenis{
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        .botao-comprar{
+            background: black;
+            width: 60%;
+            font-size: 1rem;
+            color: white;
+            text-align: center;
+            border-radius: 25px;
+            padding: .8rem 1.6rem;
+        }
+    }
+}
+
+/* iPhone X 375x812 */
+@media (min-width: 280.98px) and (max-width: 375px) {
+    .main-left{
+        width: 50%;
+    }
+
+    .main-right{
+        width: 50%;
+    }
+
+    h1{
+        font-size: 1.2rem;
+    }
+
+    .box-flutuante{
+        width: 270px;
+        height: 270px;
+
+        .img-titulo h2{
+            width: 40%;
+            font-size: 1.4rem;
+            text-align: left;
+            padding: 10px;
+        }
+
+        .tenis-flutuante{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+            .img-tenis{
+                width: 175px;
+                height: 175px;
+            }
+        }
+
+        .botao-comprar{
+            background: black;
+            width: 60%;
+            font-size: 1.4rem;
+            color: white;
+            text-align: center;
+            border-radius: 25px;
+            padding: .8rem 1.6rem;
+        }
+    }
+}
+
+/* iPad 768x1024 */
+@media (min-width: 375.98px) and (max-width: 768px) {
+    .main-left{
+        width: 50%;
+    }
+
+    .main-right{
+        width: 50%;
+    }
+
+    h1{
+        font-size: 1.6rem;
+    }
+
+    .box-flutuante{
+        width: 540px;
+        height: 540px;
+        top: 25%;
+
+        .img-titulo h2{
+            width: 40%;
+            font-size: 1.8rem;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .tenis-flutuante{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+            .img-tenis{
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+        .botao-comprar{
+            background: black;
+            width: 60%;
+            font-size: 1.8rem;
+            color: white;
+            text-align: center;
+            border-radius: 50px;
+            padding: .9rem 1.6rem;
+        }
+    }
+}
+
+/* Generic Laptop 1280x950 */
+@media (min-width: 768.98px) and (max-width: 1280px) {
+    .main-left{
+        width: 50%;
+    }
+
+    .main-right{
+        width: 50%;
+    }
+
+    h1{
+        font-size: 2.4rem;
+    }
+
+    .box-flutuante{
+        width: 540px;
+        height: 540px;
+        top: 25%;
+        left: 28%;
+
+        .img-titulo h2{
+            width: 40%;
+            font-size: 1.8rem;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .tenis-flutuante{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+            .img-tenis{
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+        .botao-comprar{
+            background: black;
+            width: 60%;
+            font-size: 1.8rem;
+            color: white;
+            text-align: center;
+            border-radius: 50px;
+            padding: .9rem 1.6rem;
+        }
+    }
+}
+
+/* Generci Laptop 1440x900 */
+@media (min-width: 1280.98px) and (max-width: 1440px) {
+    .main-left{
+        width: 50%;
+    }
+
+    .main-right{
+        width: 50%;
+    }
+
+    h1{
+        font-size: 2.6rem;
+    }
+
+    .box-flutuante{
+        width: 540px;
+        height: 540px;
+        top: 22%;
+        left: 30%;
+
+        .img-titulo h2{
+            width: 40%;
+            font-size: 1.8rem;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .tenis-flutuante{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+            .img-tenis{
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+        .botao-comprar{
+            background: black;
+            width: 60%;
+            font-size: 1.8rem;
+            color: white;
+            text-align: center;
+            border-radius: 50px;
+            padding: .9rem 1.6rem;
+        }
+    }
+}
+
+/* TV acima de 1440x900 */
+@media (min-width: 1440.98px) {
+    .main-left{
+        width: 50%;
+    }
+
+    .main-right{
+        width: 50%;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+}
